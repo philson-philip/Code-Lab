@@ -7,7 +7,7 @@ void main()
 	int Max[5][3]={7,5,3,3,2,2,9,0,2,2,2,2,4,3,3};
 	int Avail[1][3]={3,3,2};
 	int Need[5][3];
-	int i=0,r=0,c=0,j=0,finish[5],flag=5; 
+	int i=0,r=0,c=0,j=0,finish[5]={0,0,0,0,0},flag=5; 
 	//CALCULATION OF NEED MATRIX
 	for(r=0;r<5;r++)
 	{
@@ -39,19 +39,22 @@ void main()
 				Avail[0][2]=Avail[0][2]+Alloc[r][2];
 			}
 	}
-	while(flag!=0)
+	while(flag>0)
 	{
 		for(r=0;r<5;r++)
 		{
-			if((Avail[0][0]>Need[r][0]) && (Avail[0][1]>Need[r][1]) && (Avail[0][2]>Need[r][2]) && (finish[r]==0))
-                        {
-                                finish[r]=1;
-                                P[i++]=r;
-                                flag--;
-                                Avail[0][0]=Avail[0][0]+Alloc[r][0];
-                                Avail[0][1]=Avail[0][1]+Alloc[r][1];
-                                Avail[0][2]=Avail[0][2]+Alloc[r][2];
-                        }
+			if(finish[r]!=0)
+			{
+				if((Avail[0][0]>Need[r][0]) && (Avail[0][1]>Need[r][1]) && (Avail[0][2]>Need[r][2]))
+                        	{
+                                	finish[r]=1;
+                               		P[i++]=r;
+                                	flag--;
+                                	Avail[0][0]=Avail[0][0]+Alloc[r][0];
+                                	Avail[0][1]=Avail[0][1]+Alloc[r][1];
+                                	Avail[0][2]=Avail[0][2]+Alloc[r][2];
+                        	}
+			}
 		}
 	}
 	//PRINTING THE SCHEDULED ORDER OF THE PROCESS
