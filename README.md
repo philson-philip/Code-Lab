@@ -26,13 +26,13 @@ Programs in PL-SQL
 8. Program to reverse a string.
 9. Program to calculate the new salary and change in salary. An employee is given 25% increase in salary, if salary is above Rs.25000 and 20% increase in salary if his salary is above Rs.30000.
 10. Program to insert the first 15 odd nos into a table ODD and first 15 even nos into a table EVEN.
-11. Program to Update salary of Sindhu by 30% if she is earning salary >10000, otherwise update by 20% if she is earning salary>8000. Otherwise update by 10%.
+11. Program to Update salary of Sindhu by 30% if she is earning salary >10000, otherwise update by 20% if she is earning salary>8000. Otherwise update by 10%.<br>
 	Table details are given below:<br>
 	
 		INCOME : ENAME, SALARY
 		
 12. Program to Update the salary of all the employees by 20%. If total salary>1,00,000, then rollback, else commit.
-13. Program to raise an error message if the sessionals+univ_mark>150. Also handle all the possible exceptions.
+13. Program to raise an error message if the sessionals+univ_mark>150. Also handle all the possible exceptions.<br>
 	Table details are given below:<br>
 	
 		STUDENT : ROLL_NO, STUD_NAME, UNIV_MARK, SESSIONAL
@@ -59,18 +59,18 @@ Programs in PL-SQL
 			UNITS TAKEN
 			CHARGE
 
-15. Program to increase the mess fee of vegetarians by 10% and non vegetarians by 20%. Also create tables vegetarian and non_vegetarian which includes fields: stud_no, name, raise_in_fee and date on which raise was given. Insert values into these tables through PL/SQL program.
+15. Program to increase the mess fee of vegetarians by 10% and non vegetarians by 20%. Also create tables vegetarian and non_vegetarian which includes fields: stud_no, name, raise_in_fee and date on which raise was given. Insert values into these tables through PL/SQL program.<br>
 	Database details are given below:<br>
 	
 		HOSTEL_MESS: STUD_NO, NAME, MESS_FEE, VEG/NON_VEG
 		
-16. Program to do the following: If sessionals is in between 30 and 34, then give necessary moderation so that it comes upto 35. If UNIV_MARK+SESSIONAL>75, then insert those tuples into another table T2.
+16. Program to do the following: If sessionals is in between 30 and 34, then give necessary moderation so that it comes upto 35.<br>If UNIV_MARK + SESSIONAL>75 then insert those tuples into another table T2.<br>
 	Table details are given below:<br>
 	
 		T1 : ROLL_NO, UNIV_MARK, SESSIONAL
 		T2 : ROLL_NO, UNIV_MARK, SESSIONAL
 		
-17. Function which accepts the reg_no and print the total marks.
+17. Function which accepts the reg_no and print the total marks.<br>
 	Table details are given below:<br>
 	
 		STUDENT : REG_NO, NAME, PHYSICS_MARK, CHEMISTRY_MARK, MATHS_MARK
@@ -87,7 +87,7 @@ Programs in PL-SQL
 		Less than 50			Fail
 		
 20. Program to create a trigger to perform the following operations<br>
-	Whenever the balance becomes negative, create a loan in the amount of overdraft. The LOAN_NO is given same as ACC_NO.
+	Whenever the balance becomes negative, create a loan in the amount of overdraft. The LOAN_NO is given same as ACC_NO.<br>
 	Table details are given below:<br>
 	
 		ACCOUNT_TABLE: ACC_NO, C_NAME, BALANCE, BRANCH_NAME
