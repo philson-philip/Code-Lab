@@ -34,11 +34,11 @@ Programs in PL-SQL
 	The charge is calculated as follows:
 	
 		UNITS CONSUMED			CHARGE
-		**************          ******
+		**************          	******
 		Less than 20 			Nil
-		20-100 					50ps per unit
-		101-300 				75ps per unit
-		301-500 				150ps per unit
+		20-100 				50ps per unit
+		101-300 			75ps per unit
+		301-500 			150ps per unit
 		Greater than 500 		225ps per unit
 	
 	Print the electricity bill in the form:
@@ -60,19 +60,19 @@ Programs in PL-SQL
 	
 		TOTAL MARK			GRADE
 		**********			*****
-		Greater than 100	A
+		Greater than 100		A
 		70-100				B
 		50-70				C
-		Less than 50		Fail
+		Less than 50			Fail
 		
 20. Create an account table(acc_no, cname, balance, branch_name), loan table(loan_no, amt,
 branch_name), borrower table(cname, loan_no). Create a trigger to perform the following operations:
 Whenever the balance becomes negative, create a loan in the amount of overdraft. The loan_no is given
 same as acc_no.
 21. Create a transparent audit system for a table clientmaster. The system has to keep track of records that have been removed or modified and when they have been removed or modified.<br>
-	Table details are given below:
-	AuditClient: name, bal_due, operation, Op_date
-	Clientmaster: c_no, name, address, bal_due
+	Table details are given below:<br>
+	<b>AuditClient</b>: name, bal_due, operation, Op_date<br>
+	<b>Clientmaster</b>: c_no, name, address, bal_due
 
 22. Create a table with 2 number fields a and b. Write a trigger so that the value that is entered into the table satisfies the condition: a+b Greater than 75. Also if value of b is changed, it should not be changed to a smaller value. Tuples that violate these conditions should not be entered.
 	
