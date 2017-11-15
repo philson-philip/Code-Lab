@@ -26,9 +26,17 @@ Programs in PL-SQL
 8. Program to reverse a string.
 9. Program to calculate the new salary and change in salary. An employee is given 25% increase in salary, if salary is above Rs.25000 and 20% increase in salary if his salary is above Rs.30000.
 10. Program to insert the first 15 odd nos into a table ODD and first 15 even nos into a table EVEN.
-11. Program to Update salary of Sindhu by 30% if she is earning salary >10000, otherwise update by 20% if she is earning salary>8000. Otherwise update by 10%.(Table name-income, Columns: ename, salary)
+11. Program to Update salary of Sindhu by 30% if she is earning salary >10000, otherwise update by 20% if she is earning salary>8000. Otherwise update by 10%.
+	Table details are given below:<br>
+	
+		INCOME : ENAME, SALARY
+		
 12. Program to Update the salary of all the employees by 20%. If total salary>1,00,000, then rollback, else commit.
-13. Create a table student(rollno, stud_name,sessionals, univ_mark). If the sessionals+univ_mark>150, raise an error message. Also handle all the possible exceptions.
+13. Program to raise an error message if the sessionals+univ_mark>150. Also handle all the possible exceptions.
+	Table details are given below:<br>
+	
+		STUDENT : ROLL_NO, STUD_NAME, UNIV_MARK, SESSIONAL
+		
 14. Program to accept the customer_no and print the electricity bill for the same.
 
 	The charge is calculated as follows:
@@ -51,9 +59,22 @@ Programs in PL-SQL
 			UNITS TAKEN
 			CHARGE
 
-15. Create a hostel mess database with fields(stud_no, name, messfee, veg/nonveg). Write a PL/SQL program to increase the mess fee of vegetarians by 10% and non vegetarians by 20%. Also create tables vegetarian and non_vegetarian which includes fields: stud_no, name, raise_in_fee and date on which raise was given. Insert values into these tables through PL/SQL program.
-16. Create a table T1 having 3 fields(rollno, univ_mark and sessionals). Write a PL/SQL program to do the following: If sessionals is in between 30 and 34, then give necessary moderation so that it comes upto 35. If univ_mark+sessionals>75, then insert those tuples into another table T2.
-17. Function which accepts the reg_no and print the total marks. The student table has the fields: reg_no, name, physics_mark, chemistry_mark and maths_mark.
+15. Program to increase the mess fee of vegetarians by 10% and non vegetarians by 20%. Also create tables vegetarian and non_vegetarian which includes fields: stud_no, name, raise_in_fee and date on which raise was given. Insert values into these tables through PL/SQL program.
+	Database details are given below:<br>
+	
+		HOSTEL_MESS: STUD_NO, NAME, MESS_FEE, VEG/NON_VEG
+		
+16. Program to do the following: If sessionals is in between 30 and 34, then give necessary moderation so that it comes upto 35. If UNIV_MARK+SESSIONAL>75, then insert those tuples into another table T2.
+	Table details are given below:<br>
+	
+		T1 : ROLL_NO, UNIV_MARK, SESSIONAL
+		T2 : ROLL_NO, UNIV_MARK, SESSIONAL
+		
+17. Function which accepts the reg_no and print the total marks.
+	Table details are given below:<br>
+	
+		STUDENT : REG_NO, NAME, PHYSICS_MARK, CHEMISTRY_MARK, MATHS_MARK
+		
 18. Function to find sum of first N even no:s
 19. Program to display the grade of a particular student from student database.
 	Use a stored procedure to display the grade
@@ -65,15 +86,26 @@ Programs in PL-SQL
 		50-70				C
 		Less than 50			Fail
 		
-20. Create an account table(acc_no, cname, balance, branch_name), loan table(loan_no, amt,
-branch_name), borrower table(cname, loan_no). Create a trigger to perform the following operations:
-Whenever the balance becomes negative, create a loan in the amount of overdraft. The loan_no is given
-same as acc_no.
-21. Create a transparent audit system for a table clientmaster. The system has to keep track of records that have been removed or modified and when they have been removed or modified.<br>
+20. Program to create a trigger to perform the following operations<br>
+	Whenever the balance becomes negative, create a loan in the amount of overdraft. The LOAN_NO is given same as ACC_NO.
 	Table details are given below:<br>
-	<b>AuditClient</b>: name, bal_due, operation, Op_date<br>
-	<b>Clientmaster</b>: c_no, name, address, bal_due
+	
+		ACCOUNT_TABLE: ACC_NO, C_NAME, BALANCE, BRANCH_NAME
+		LOAN_TABLE: LOAN_NO, AMOUNT, BRANCH_NAME
+		BORROWER_TABLE: C_NAME, LOAN_NO
+	
+21. Create a transparent audit system for a table CLIENT_MASTER. The system has to keep track of records that have been removed or modified and when they have been removed or modified.<br>
+	Table details are given below:<br>
+	
+		AUDIT_CLIENT: NAME, BAL_DUE, OPERATION, OP_DATE
+		CLIENT_MASTER: C_NO, NAME, ADDRESS, BAL_DUE
 
 22. Create a table with 2 number fields a and b. Write a trigger so that the value that is entered into the table satisfies the condition: a+b Greater than 75. Also if value of b is changed, it should not be changed to a smaller value. Tuples that violate these conditions should not be entered.
+
+Programs in Java
+----------------
+1. Implementation of Applet
+2. To find length of a String
+3. Synchronisation of Thread
 	
 	
