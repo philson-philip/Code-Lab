@@ -30,15 +30,16 @@ Programs in PL-SQL
 12. Program to Update the salary of all the employees by 20%. If total salary>1,00,000, then rollback, else commit.
 13. Create a table student(rollno, stud_name,sessionals, univ_mark). If the sessionals+univ_mark>150, raise an error message. Also handle all the possible exceptions.
 14. Program to accept the customer_no and print the electricity bill for the same.
+
 	The charge is calculated as follows:
 	
 	UNITS CONSUMED			CHARGE
 	**************          ******
-	<20 					Nil
+	Less than 20 			Nil
 	20-100 					50ps per unit
 	101-300 				75ps per unit
 	301-500 				150ps per unit
-	>500 					225ps per unit
+	Greater than 500 		225ps per unit
 	
 	Print the electricity bill in the form:
 	
@@ -54,14 +55,15 @@ Programs in PL-SQL
 16. Create a table T1 having 3 fields(rollno, univ_mark and sessionals). Write a PL/SQL program to do the following: If sessionals is in between 30 and 34, then give necessary moderation so that it comes upto 35. If univ_mark+sessionals>75, then insert those tuples into another table T2.
 17. Function which accepts the reg_no and print the total marks. The student table has the fields: reg_no, name, physics_mark, chemistry_mark and maths_mark.
 18. Function to find sum of first N even no:s
-19. Program to display the grade of a particular student from student database. Use a stored procedure to display the grade
+19. Program to display the grade of a particular student from student database.
+	Use a stored procedure to display the grade
 	
-	TOTAL MARK			GRADE
-	**********			*****
-	Greater than 100 	A
-	70-100 				B
-	50-70 				C
-	Less than 50 		Fail
+			TOTAL MARK			GRADE
+			**********			*****
+			Greater than 100 	A
+			70-100 				B
+			50-70 				C
+			Less than 50 		Fail
 		
 20. Create an account table(acc_no, cname, balance, branch_name), loan table(loan_no, amt,
 branch_name), borrower table(cname, loan_no). Create a trigger to perform the following operations:
